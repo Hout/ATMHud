@@ -54,7 +54,6 @@
 	[base addSubview:__view];
 	
 	self.view = base;
-	[base release];
 }
 
 - (void)viewDidLoad {
@@ -71,18 +70,6 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-}
-
-- (void)dealloc {
-	[sound release];
-	[__view release];
-	[displayQueue release];
-	
-	[showSound release];
-	[updateSound release];
-	[hideSound release];
-	
-    [super dealloc];
 }
 
 + (NSString *)buildInfo {

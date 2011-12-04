@@ -45,9 +45,4 @@
 	UIGraphicsPopContext();
 }
 
-- (void)dealloc {
-	[caption release];
-	[super dealloc];
-}
-
 @end

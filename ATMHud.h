@@ -41,7 +41,7 @@ typedef enum {
 	NSString *updateSound;
 	NSString *hideSound;
 	
-	id <ATMHudDelegate> delegate;
+	__unsafe_unretained id <ATMHudDelegate> delegate;
 	ATMHudAccessoryPosition accessoryPosition;
 	
 	@private
