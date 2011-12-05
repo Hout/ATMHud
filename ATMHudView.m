@@ -203,9 +203,11 @@
 				activityRect = CGRectMake((targetBounds.size.width-activitySize.width)*0.5, marginY, activitySize.width, activitySize.height);
 				
 				imageRect = CGRectZero;
-				imageRect.origin.x = (targetBounds.size.width-image.size.width)*0.5;
-				imageRect.origin.y = marginY;
-				imageRect.size = image.size;
+        if (image) {
+          imageRect.origin.x = (targetBounds.size.width-image.size.width)*0.5;
+          imageRect.origin.y = marginY;
+          imageRect.size = image.size;
+        }
 				
 				progressRect = CGRectMake((targetBounds.size.width-progressRect.size.width)*0.5, marginY, progressRect.size.width, progressRect.size.height);
 				
@@ -218,9 +220,11 @@
 				activityRect = CGRectMake(marginX+p.padding+captionSize.width, (targetBounds.size.height-activitySize.height)*0.5, activitySize.width, activitySize.height);
 				
 				imageRect = CGRectZero;
-				imageRect.origin.x = marginX+p.padding+captionSize.width;
-				imageRect.origin.y = (targetBounds.size.height-image.size.height)*0.5;
-				imageRect.size = image.size;
+        if (image) {
+          imageRect.origin.x = marginX+p.padding+captionSize.width;
+          imageRect.origin.y = (targetBounds.size.height-image.size.height)*0.5;
+          imageRect.size = image.size;
+        }
 				
 				captionRect.origin.x = marginX;
 				captionRect.origin.y = marginY;
@@ -231,9 +235,11 @@
 				activityRect = CGRectMake((targetBounds.size.width-activitySize.width)*0.5, captionRect.size.height+marginY+p.padding, activitySize.width, activitySize.height);
 				
 				imageRect = CGRectZero;
-				imageRect.origin.x = (targetBounds.size.width-image.size.width)*0.5;
-				imageRect.origin.y = captionRect.size.height+marginY+p.padding;
-				imageRect.size = image.size;
+        if (image) {
+          imageRect.origin.x = (targetBounds.size.width-image.size.width)*0.5;
+          imageRect.origin.y = captionRect.size.height+marginY+p.padding;
+          imageRect.size = image.size;
+        }
 				
 				progressRect = CGRectMake((targetBounds.size.width-progressRect.size.width)*0.5, captionRect.size.height+marginY+p.padding, progressRect.size.width, progressRect.size.height);
 				
@@ -246,9 +252,11 @@
 				activityRect = CGRectMake(marginX, (targetBounds.size.height-activitySize.height)*0.5, activitySize.width, activitySize.height);
 				
 				imageRect = CGRectZero;
-				imageRect.origin.x = marginX;
-				imageRect.origin.y = (targetBounds.size.height-image.size.height)*0.5;
-				imageRect.size = image.size;
+        if (image) {
+          imageRect.origin.x = marginX;
+          imageRect.origin.y = (targetBounds.size.height-image.size.height)*0.5;
+          imageRect.size = image.size;
+        }
 				
 				captionRect.origin.x = marginX+adjustment;
 				captionRect.origin.y = marginY;
